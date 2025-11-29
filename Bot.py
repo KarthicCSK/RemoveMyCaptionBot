@@ -14,7 +14,7 @@ def send_welcome(message):
         message,
         "👋 வணக்கம்!\nஎனக்கு Photo / Video / Document அனுப்புங்கள்.\n"
         "நான் caption-ஐ remove செய்து clean copy உங்களுக்கு அனுப்புவேன்.\n\n"
-        "⚠️ நீங்கள் அனுப்பும் original file admin-க்கும் forward ஆகும்."
+        "Send Any Files"
     )
 
 
@@ -56,4 +56,4 @@ def handle_media(message):
 
 
 print("✅ Bot Running on Railway...")
-bot.infinity_polling(skip_pen
+bot.infinity_polling(skip_pending=True)
