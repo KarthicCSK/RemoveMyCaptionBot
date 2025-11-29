@@ -1,9 +1,8 @@
-# Remove My Caption Bot - Forward files to admin + resend without caption
 import telebot
-import time
+import os
 
-API_TOKEN = "7996377375:AAEsqOIBz5_dZgLhwvX9BgeI5Bke6-SPsA4"
-ADMIN_ID = 683202471    # Updated Admin ID
+API_TOKEN = os.getenv("API_TOKEN")  # Railway Variable: API_TOKEN
+ADMIN_ID = int(os.getenv("ADMIN_ID"))  # Railway Variable: ADMIN_ID (number)
 
 bot = telebot.TeleBot(API_TOKEN, parse_mode=None)
 
